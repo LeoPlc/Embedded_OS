@@ -16,6 +16,8 @@ Pour transférer un code du PC vers le raspberry:
 
 `scp hello leo@192.168.1.17:/home/leo/Documents`
 
-où 'hello' est le binaire précédemment cross-compilé grâce à la commande suivante 
+où 'hello' est le binaire précédemment cross-compilé grâce à la commande suivante (à partir d'une architecture x86)
 
 `arm-linux-gnueabihf-gcc -o hello hello.c`
+
+La compilation à partir d'une architecture ARM se fait avec l'option supplémentaire `-static`
