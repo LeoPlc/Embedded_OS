@@ -20,4 +20,7 @@ où 'hello' est le binaire précédemment cross-compilé grâce à la commande s
 
 `arm-linux-gnueabihf-gcc -o hello hello.c`
 
-La compilation à partir d'une architecture ARM se fait avec l'option supplémentaire `-static`
+La compilation à partir d'une architecture ARM se fait avec l'option supplémentaire `-static` à cause de la différence entre les versions de GLIB sur Linux et le Raspberry Pi 4:
+
+`aarch64-linux-gnu-gcc -o mon_programme mon_programme.c -static
+`
