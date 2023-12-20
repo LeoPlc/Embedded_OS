@@ -1,4 +1,0 @@
-Starting an interval library
-
-
-
